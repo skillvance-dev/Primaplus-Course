@@ -1,16 +1,11 @@
-const slider = document.getElementById('mentorSlider');
-let scrollAmount = 0;
+let slider = document.getElementById("mentor-slider");
+let slides = document.querySelectorAll(".slide");
+let index = 0;
 
-function autoScrollSlider() {
-  if (slider.scrollWidth - slider.clientWidth === scrollAmount) {
-    scrollAmount = 0;
-  } else {
-    scrollAmount += 310; // Ukuran 1 slide + gap
-  }
-  slider.scrollTo({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
+function autoSlide() {
+  index++;
+  if (index >= slides.length) index = 0;
+  slider.style.transform = `translateX(-${index * 100}%)`;
 }
 
-setInterval(autoScrollSlider, 3000);
+setInterval(autoSlide, 3000);
