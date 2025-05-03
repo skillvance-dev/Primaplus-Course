@@ -1,117 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fc;
-  color: #333;
-}
-
-/* Header */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #1e3a8a, #ffd700);
-  padding: 10px 30px;
-  color: white;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.auth .btn {
-  margin-left: 10px;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 4px;
-  background: white;
-  color: #1e3a8a;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #ffd700;
-  color: #1e3a8a;
-}
-
-/* Hero */
+/* Hero Section - Kurangi tinggi */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 20px; /* dikurangi dari 80px */
   background: linear-gradient(135deg, #3b82f6, #e0c96b);
   color: white;
 }
 
 .hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
+  font-size: 2em; /* dari 2.5em */
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.1em;
+  margin-bottom: 15px;
 }
 
-/* Features */
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 40px 20px;
-  gap: 20px;
-}
-
-.feature-box {
-  background: #e2e8f0;
-  padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-/* Mentors slider */
+/* Mentor Section - Lebih besar dan tampil profil */
 .mentors {
-  padding: 50px 20px;
+  padding: 60px 20px;
   background: #f1f5f9;
   text-align: center;
 }
 
 .slider {
   display: flex;
-  overflow: auto;
+  overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .slide {
   flex: 0 0 100%;
   max-width: 100%;
   background: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   min-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-/* Responsive */
+.slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.slide h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+
+.slide p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Responsive untuk slider */
 @media (min-width: 600px) {
   .slide {
     flex: 0 0 45%;
