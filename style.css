@@ -95,23 +95,35 @@ header {
   text-align: center;
 }
 
-.slider {
-  display: flex;
+.slider-wrapper {
   overflow: hidden;
-  margin-top: 5px;
+  width: 100%;
 }
 
-.slide {
-  min-width: 100%;
+.slider {
+  display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-.slide img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+.slide {
+  flex: 0 0 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
 }
+
+@media (min-width: 768px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide {
+    flex: 0 0 33.33%;
+  }
+}
+
 
 footer {
   text-align: center;
