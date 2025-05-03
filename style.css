@@ -107,7 +107,7 @@ header {
 
 .slide {
   flex: 0 0 100%;
-  padding: 10px;
+  padding: 40px;
   box-sizing: border-box;
   text-align: center;
 }
