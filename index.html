@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prima+ - Platform Pengembangan Skill</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Prima+</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <div class="logo">
-      <img src="assets/logo.png" alt="Prima+ Logo">
+      <img src="logo.png" alt="Prima+ Logo" />
       <span>Prima+</span>
     </div>
-    <nav>
+    <nav class="navbar">
       <a href="#">Home</a>
       <a href="#">Courses</a>
       <a href="#">Mentoring</a>
@@ -24,54 +20,49 @@
       <a href="#">About</a>
     </nav>
     <div class="auth">
-      <button class="btn">Login</button>
-      <button class="btn btn-primary">Daftar</button>
+      <button>Login</button>
+      <button>Daftar</button>
     </div>
   </header>
 
   <section class="hero">
     <h1>Tingkatkan Skill, Raih Karier Impian</h1>
     <p>Belajar langsung dari para praktisi dan mentor profesional di bidangnya.</p>
-    <a href="#" class="btn btn-primary">Mulai Belajar</a>
+    <a href="#" class="btn">Mulai Belajar</a>
   </section>
 
   <section class="features">
-    <div class="feature-box">
+    <div class="card">
       <h3>Kursus Praktis</h3>
       <p>Pelatihan berbasis kebutuhan industri dengan studi kasus nyata.</p>
     </div>
-    <div class="feature-box">
+    <div class="card">
       <h3>Mentoring 1-on-1</h3>
       <p>Konsultasi langsung dengan mentor pilihanmu.</p>
     </div>
-    <div class="feature-box">
+    <div class="card">
       <h3>Sertifikat Digital</h3>
       <p>Dapatkan sertifikat resmi setelah menyelesaikan pelatihan.</p>
     </div>
   </section>
 
   <section class="mentors">
-  <h2>Mentor Terbaik Kami</h2>
-  <div class="slider" id="mentorSlider">
-    <div class="slide">
-      <img src="assets/mentor1.jpg" alt="Mentor 1">
-      <h4>Dr. Andi Prasetyo</h4>
-      <p>Lean Manufacturing Expert</p>
+    <h2>Mentor Terbaik Kami</h2>
+    <div class="slider" id="mentor-slider">
+      <div class="slide">
+        <img src="mentor1.jpg" alt="Mentor 1">
+        <p>Mentor A - Digital Marketing</p>
+      </div>
+      <div class="slide">
+        <img src="mentor2.jpg" alt="Mentor 2">
+        <p>Mentor B - Data Analyst</p>
+      </div>
+      <div class="slide">
+        <img src="mentor3.jpg" alt="Mentor 3">
+        <p>Mentor C - UI/UX Designer</p>
+      </div>
     </div>
-    <div class="slide">
-      <img src="assets/mentor2.jpg" alt="Mentor 2">
-      <h4>Sri Wahyuni, M.Sc</h4>
-      <p>Quality System Specialist</p>
-    </div>
-    <div class="slide">
-      <img src="assets/mentor3.jpg" alt="Mentor 3">
-      <h4>Ir. Budi Santoso</h4>
-      <p>TPM & Maintenance Coach</p>
-    </div>
-    <!-- dan seterusnya -->
-  </div>
-</section>
-
+  </section>
 
   <footer>
     <p>© 2025 Prima+. All rights reserved.</p>
