@@ -98,7 +98,7 @@ header {
 .slider {
   display: flex;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .slide {
