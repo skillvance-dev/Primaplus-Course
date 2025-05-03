@@ -1,213 +1,92 @@
-/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Typography & Body */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f5f7fa;
   color: #333;
 }
 
-/* Header */
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background: #1e3a8a;
+  padding: 15px 30px;
+  color: white;
 }
 
-.logo-container {
+.logo {
   display: flex;
   align-items: center;
 }
 
-.logo-container img {
-  width: 50px;
+.logo img {
+  height: 40px;
   margin-right: 10px;
 }
 
-.header-text h1 {
-  font-size: 1.5rem;
-  margin-bottom: 2px;
-}
-
-.header-text p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
 nav a {
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  margin: 0 15px;
 }
 
-.nav-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.login-btn,
-.daftar-btn {
-  padding: 8px 15px;
-  border: none;
-  background-color: #0077cc;
-  color: #fff;
+.nav-buttons a {
+  margin-left: 15px;
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
   text-decoration: none;
   border-radius: 4px;
-  font-size: 0.9rem;
 }
 
-.login-btn:hover,
-.daftar-btn:hover {
-  background-color: #005fa3;
-}
-
-/* Hero section */
 .hero {
-  padding: 60px 20px;
-  background: url("assets/background.jpg") center/cover no-repeat;
-  color: white;
   text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: white;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.hero button {
-  padding: 12px 25px;
-  font-size: 1rem;
-  background-color: #ff6600;
-  color: white;
-  border: none;
+.hero .cta-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: #1e3a8a;
   border-radius: 5px;
-  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.hero button:hover {
-  background-color: #e05400;
-}
-
-/* Features Section */
 .features {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding: 40px 20px;
-  background-color: #fff;
+  background: #fff;
 }
 
-.feature {
-  flex: 1 1 250px;
-  margin: 20px;
+.feature-box {
+  flex: 1;
+  margin: 0 10px;
   padding: 20px;
-  background-color: #f1f1f1;
+  background: #e5e7eb;
   border-radius: 8px;
   text-align: center;
 }
 
-/* CTA Section */
-.cta {
-  padding: 40px 20px;
-  background-color: #0077cc;
-  color: white;
-  text-align: center;
-}
-
-.cta h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.cta p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.cta button {
-  padding: 12px 25px;
-  background-color: #fff;
-  color: #0077cc;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.cta button:hover {
-  background-color: #e6e6e6;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
-  font-size: 0.9rem;
-  margin-top: 40px;
-}
-
-.footer-links a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .cta h2 {
-    font-size: 1.5rem;
-  }
-
-  .logo-container {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .header-text {
-    text-align: center;
-  }
-
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-buttons {
-    margin-top: 10px;
-  }
+  background-color: #1e3a8a;
+  color: white;
 }
