@@ -4,31 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prima+ - Platform Pengembangan Skill</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
     <div class="logo">
-      <img src="assets/logo.png" alt="Prima+ Logo" />
+      <img src="assets/logo.png" alt="Prima+ Logo">
       <span>Prima+</span>
     </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="courses.html">Courses</a>
-      <a href="mentoring.html">Mentoring</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Mentoring</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
     </nav>
-    <div class="nav-buttons">
-      <a href="login.html" class="login-btn">Login</a>
-      <a href="register.html" class="daftar-btn">Daftar</a>
+    <div class="auth">
+      <button class="btn">Login</button>
+      <button class="btn btn-primary">Daftar</button>
     </div>
   </header>
 
   <section class="hero">
     <h1>Tingkatkan Skill, Raih Karier Impian</h1>
     <p>Belajar langsung dari para praktisi dan mentor profesional di bidangnya.</p>
-    <a href="courses.html" class="cta-btn">Mulai Belajar</a>
+    <a href="#" class="btn btn-primary">Mulai Belajar</a>
   </section>
 
   <section class="features">
@@ -46,8 +50,21 @@
     </div>
   </section>
 
+  <section class="mentors">
+    <h2>Mentor Terbaik Kami</h2>
+    <div class="slider">
+      <div class="slide">👨‍🏫 Mentor 1</div>
+      <div class="slide">👩‍🏫 Mentor 2</div>
+      <div class="slide">👨‍🏫 Mentor 3</div>
+      <div class="slide">👩‍🏫 Mentor 4</div>
+      <div class="slide">👨‍🏫 Mentor 5</div>
+    </div>
+  </section>
+
   <footer>
-    &copy; 2025 Prima+. All rights reserved.
+    <p>© 2025 Prima+. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
