@@ -5,50 +5,58 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fc;
   color: #333;
 }
 
+/* Header */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1e3a8a;
-  padding: 15px 30px;
+  background: linear-gradient(to right, #1e3a8a, #ffd700);
+  padding: 10px 30px;
   color: white;
 }
 
-.logo {
+header .logo {
   display: flex;
   align-items: center;
-}
-
-.logo img {
-  height: 40px;
-  margin-right: 10px;
+  gap: 10px;
 }
 
 nav a {
+  margin: 0 10px;
   color: white;
   text-decoration: none;
-  margin: 0 15px;
+  font-weight: bold;
 }
 
-.nav-buttons a {
-  margin-left: 15px;
-  padding: 8px 16px;
-  background-color: #3b82f6;
-  color: white;
-  text-decoration: none;
+.auth .btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
   border-radius: 4px;
+  background: white;
+  color: #1e3a8a;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+.btn-primary {
+  background-color: #ffd700;
+  color: #1e3a8a;
+}
+
+/* Hero */
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #3b82f6, #e0c96b);
   color: white;
 }
 
@@ -57,36 +65,61 @@ nav a {
   margin-bottom: 15px;
 }
 
-.hero .cta-btn {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: white;
-  color: #1e3a8a;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
+/* Features */
 .features {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 40px 20px;
-  background: #fff;
+  gap: 20px;
 }
 
 .feature-box {
-  flex: 1;
-  margin: 0 10px;
+  background: #e2e8f0;
   padding: 20px;
-  background: #e5e7eb;
-  border-radius: 8px;
+  width: 300px;
+  border-radius: 10px;
   text-align: center;
 }
 
-footer {
+/* Mentors slider */
+.mentors {
+  padding: 50px 20px;
+  background: #f1f5f9;
   text-align: center;
+}
+
+.slider {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  background: white;
   padding: 20px;
-  background-color: #1e3a8a;
-  color: white;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .slide {
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 900px) {
+  .slide {
+    flex: 0 0 30%;
+  }
 }
