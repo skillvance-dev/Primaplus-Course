@@ -91,14 +91,14 @@ header {
 
 .mentors {
   background: #f4f8fb;
-  padding: 40px 40px;
+  padding: 40px 60px;
   text-align: center;
 }
 
 .slider {
   display: flex;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .slide {
